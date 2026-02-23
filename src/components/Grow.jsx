@@ -39,9 +39,9 @@ const contentData = {
         title: "Professional Tender Bidding",
         text: [
             "The tender bidding process can be complex and challenging, especially with the constantly evolving guidelines and documentation requirements set by government entities. Without proper guidance, creating a winning bid can be a difficult task.",
-            "At TendersPlus, we provide end-to-end support to make your tender bidding journey seamless and effective. Our team of expert advisors meticulously analyzes tender documents to ensure compliance with every requirement. Whether it’s Government E-Marketplace (GeM), Central Public Procurement Portal (CPPP), Indian Railways E-Procurement System (IREPS), or other government platforms, we cater to your unique needs with precision and expertise.",
+            "At Gameasy, we provide end-to-end support to make your tender bidding journey seamless and effective. Our team of expert advisors meticulously analyzes tender documents to ensure compliance with every requirement. Whether it’s Government E-Marketplace (GeM), Central Public Procurement Portal (CPPP), Indian Railways E-Procurement System (IREPS), or other government platforms, we cater to your unique needs with precision and expertise.",
             "Our experts not only guide you through the bidding process but also take the responsibility of preparing and submitting tender documents on your behalf. We also provide Tender Analytics, offering insights into archived tender trends, helping you strategize and optimize your bid preparation for better success rates. Accuracy, compliance, and customized support are at the core of our services, ensuring your bid stands out in the competitive marketplace.",
-            "Partner with TendersPlus and experience seamless tender bidding with our expert and dedicated team. Let us handle the complexities while you focus on growing your business."
+            "Partner with Gameasy and experience seamless tender bidding with our expert and dedicated team. Let us handle the complexities while you focus on growing your business."
         ],
         image:
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
@@ -54,7 +54,7 @@ const contentData = {
 
             "The government has implemented a comprehensive framework for MSME registration, providing formal recognition and extensive benefits. The Udyam Registration process requires basic details such as Aadhaar, PAN, and business information, ensuring simplicity and accessibility. Once registered, businesses receive an MSME certificate, which grants access to benefits including tax exemptions, EMD (Earnest Money Deposit) waivers for government tenders, protection against delayed payments, lower interest rates on loans, and eligibility for subsidies.",
 
-            "TendersPlus simplifies the MSME registration journey by providing expert guidance and end-to-end support. From understanding the eligibility criteria to obtaining your Udyam MSME certificate, TendersPlus ensures a seamless registration experience. With our assistance, businesses can maximize the advantages of MSME registration and unlock new opportunities for growth and success."
+            "Gameasy simplifies the MSME registration journey by providing expert guidance and end-to-end support. From understanding the eligibility criteria to obtaining your Udyam MSME certificate, Gameasy ensures a seamless registration experience. With our assistance, businesses can maximize the advantages of MSME registration and unlock new opportunities for growth and success."
         ],
         image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
     },
@@ -79,7 +79,7 @@ const contentData = {
 
             "Every day, government organizations publish thousands of tenders, inviting applications from eligible suppliers for quality products and services. All tender notices are published on the CPPP, making it possible for registered users to find the latest tenders and apply to relevant opportunities.",
 
-            "TendersPlus provides expert assistance in CPPP registration and tender participation. Our team ensures complete compliance with documentation requirements and submission guidelines, helping businesses successfully participate in government procurement opportunities."
+            "Gameasy provides expert assistance in CPPP registration and tender participation. Our team ensures complete compliance with documentation requirements and submission guidelines, helping businesses successfully participate in government procurement opportunities."
         ],
         image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
     },
@@ -88,7 +88,7 @@ const contentData = {
         title: "Grow with Gemeasy",
         text: [
             "Grow your business with Gemeasy, a dedicated team of industry professionals offering comprehensive services. Specializing in GeM Portal Registration, Product Listing, Tender Bidding, Udyam MSME Registration, GeM Vendor Assessment, OEM Panel, and more for Government Tenders, Gemeasy adapts to the evolving landscape of government e-procurement, providing adept solutions for online bidding.",
-            "Our experienced advisors streamline bidding, meticulously analyzing Tender documents for all government authorities. Gemeasy goes beyond consultation, ensuring document submissions on behalf of clients across various tender portals. Seize the opportunity with Free expert consultation and our introductory offer – the first service, valued at Rs.1999, is complimentary.",
+            "Our experienced advisors streamline bidding, meticulously analyzing Tender documents for all government authorities. Gemeasy goes beyond consultation, ensuring document submissions on behalf of clients across various tender portals. Seize the opportunity with Free expert consultation and our introductory offer – the first service, valued at Rs.1000, is complimentary.",
             "Register on our website to explore Active Tenders Information, Tender Results, and Contracts from the GeM Portal with Gemeasy. Your go-to partner for end-to-end tender-related services, offering a seamless and efficient tendering experience.",
         ],
         image:

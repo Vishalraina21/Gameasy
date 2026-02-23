@@ -6,6 +6,7 @@ import Hero from '../components/Hero'
 import Grow from '../components/Grow'
 import Tenders from '../components/Tenders'
 import Offer from '../components/Offer'
+import OurPartners from '../components/OurPartners'
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Offer />
             <Cards />
             <Grow />
+            <OurPartners />
             <Services />
             <Tags />
             <Tenders />

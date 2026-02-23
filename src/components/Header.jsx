@@ -9,9 +9,11 @@ import {
 import { Button, IconButton } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png"
+import RegisterModal from "./RegisterModal";
 const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
     const location = useLocation();
     const navItems = [
         { name: "Tenders", path: "/tenders" },
@@ -35,13 +37,14 @@ const Header = () => {
             <div className="hidden md:flex justify-end items-center px-6 py-2 text-sm text-gray-700">
                 <div className="flex items-center gap-3">
                     <Phone sx={{ fontSize: 18 }} />
-                    <span>+91 9279921887</span>
+                    <span>91 8972171685 | +91 7970463729</span>
                     <span>|</span>
                     <Mail sx={{ fontSize: 18 }} />
-                    <span>contact@Gemeasy.com</span>
+                    <span>gemeasy25@gmail.com</span>
 
                     <Link to="/">
                         <Button
+                            onClick={() => setOpenModal(true)}
                             variant="contained"
                             className="!ml-4 !bg-indigo-600 hover:!bg-indigo-700 !rounded-md !px-4 !py-1"
                         >
@@ -188,6 +191,9 @@ const Header = () => {
                     </Link>
                 </motion.div>
             )}
+
+            <RegisterModal open={openModal} setOpen={setOpenModal} />
+
         </header>
     );
 };

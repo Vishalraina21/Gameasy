@@ -12,7 +12,7 @@ const Offer = () => {
                     </h3>
 
                     <h2 className="text-2xl md:text-4xl font-bold text-indigo-600 mt-1">
-                        Rs.1999 FREE!
+                        Rs.1000 FREE!
                     </h2>
                 </div>
 

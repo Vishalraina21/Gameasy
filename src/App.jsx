@@ -12,6 +12,7 @@ import Tenderbidding from "./pages/Tenderbidding";
 import Msme from "./pages/Msme";
 import Vendorassesment from "./pages/Vendorassesment";
 import Other from "./pages/Other";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/msme" element={<Msme />} />
             <Route path="/vendor-assessment" element={<Vendorassesment />} />
             <Route path="/authorized-registration" element={<Other />} />
+            <Route path="/about" element={<About />} />
 
           </Routes>
         </main>

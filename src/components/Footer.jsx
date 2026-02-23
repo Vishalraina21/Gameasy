@@ -91,7 +91,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Info</h4>
             <ul className="space-y-1 text-gray-300 text-xs">
-              <li>About Us</li>
+              {/* <li>About Us</li> */}
+              <Link to="/about" >About Us</Link>
               <li>FAQ's</li>
               <li>News</li>
               <li>Blogs</li>
@@ -103,9 +104,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Contact Us</h4>
             <ul className="space-y-1 text-gray-300 text-xs">
-              <li>Sales : +91 9279921887</li>
-              <li>contact@Gemeasy.com</li>
-              <li>Patna</li>
+              <li>Sales : +91 8972171685 | +91 7970463729</li>
+              <li>gemeasy25@gmail.com</li>
+              <li>Ground Floor, Adison Arcade LG-11 Fraser Road, opp. Doordarshan Patna, Bihar 800001, India</li>
             </ul>
           </div>
 

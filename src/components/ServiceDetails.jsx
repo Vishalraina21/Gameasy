@@ -5,16 +5,16 @@ const pageContent = {
     "/gmeregestration": {
         title: "GeM Registration Process",
         intro:
-            "Start your GeM registration process easily with TendersPlus. Our expert GeM consultancy service team streamlines the process, ensuring your account is set up and ready within one day!",
+            "Start your GeM registration process easily with Gameasy. Our expert GeM consultancy service team streamlines the process, ensuring your account is set up and ready within one day!",
         steps: [
-            "Register on Tenders Plus: One-stop solution for all GeM Tenders and Services.",
+            "Register on Gameasy: One-stop solution for all GeM Tenders and Services.",
             "Business Info: Submit the contact details and basic information about your business.",
             "Service team: Our GeM Consultancy Service Experts will connect to explain the process and documents required.",
             "Package Selection: Select the services that best suit your business needs.",
             "GeM Login: Your GeM login will be ready within 1 business day after documentation completion.",
             "Profile Updation: Our experts will guide you after GeM Login process.",
             "Product Listing: Next step will be Product listing on GeM Portal for Tender Bidding.",
-            "TendersPlus: Reach out to our team anytime at contact@tendersplus.com.",
+            "Gameasy: Reach out to our team anytime at gameasy25@gmail.com.",
         ],
     },
 
@@ -31,13 +31,13 @@ const pageContent = {
             "Sales Info: Enter quantity, MRP, offer price & delivery details.",
             "Product Images: Upload 3 images as per GeM guidelines.",
             "Review and Submit: Review and publish product catalogue.",
-            "TendersPlus Team: Connect with our team for support.",
+            "Gameasy Team: Connect with our team for support.",
         ],
     },
     "/msme": {
         title: "MSME Registration Online Process",
         intro:
-            "Start your MSME registration process easily with TendersPlus. Our expert consultancy service team streamlines the process, ensuring your account is ready!",
+            "Start your MSME registration process easily with Gameasy. Our expert consultancy service team streamlines the process, ensuring your account is ready!",
 
         steps: [
             "Udyam Registration Portal: Visit the official Udyam Registration portal for MSME Registration and click on For New Entrepreneurs who are not Registered yet as MSME or those with EM-II.",
@@ -47,7 +47,7 @@ const pageContent = {
             "Financial Details: investment in plant and machinery, Turnover details and complete the verification through OTP.",
             "Udyam Registration Certificate: After successful verification, the system generates a 19-digit unique Udyam Registration Number in the format UDYAM-XX-00-0000000.",
             "MSME Registration Fees: Registration Process is totally free.",
-            "TendersPlus Team: Reach out to our team anytime at contact@tendersplus.com or chat with us.",
+            "Gameasy Team: Reach out to our team anytime at gameasy25@gmail.com or chat with us.",
             "Udyam Registration Certificate: Udyam Registration Certificate or the MSME Certificate download can be done after the successful completion of the registration process. The Certificate includes a QR Code for convenient access to enterprise details."
         ]
     },
@@ -73,9 +73,9 @@ const pageContent = {
     "/tenderbidding": {
         title: "Tender Bidding Process",
         intro:
-            "TendersPlus experts simplify tender bidding on GeM, eProcurement, IREPS, Nprocure and more by offering tender identification, documentation and guidance to ensure compliance.",
+            "Gameasy experts simplify tender bidding on GeM, eProcurement, IREPS, Nprocure and more by offering tender identification, documentation and guidance to ensure compliance.",
         steps: [
-            "Register on Tenders Plus platform.",
+            "Register on Gameasy platform.",
             "Business Details: Provide contact and business information.",
             "Service Experts: Our team connects and understands requirements.",
             "Registration Process: Fulfill registration requirements.",
@@ -83,9 +83,9 @@ const pageContent = {
             "Services Required: Confirm necessary services.",
             "Bid Tenders: Provide tender details to bid.",
             "Tender Checklist: Prepare documents and agreement terms.",
-            "TendersPlus Team: Consultancy in documentation & analytics.",
+            "Gameasy Team: Consultancy in documentation & analytics.",
         ],
-        extraSection: true,
+        extraSection: false,
     },
 
     default: {
@@ -188,7 +188,7 @@ const ServiceDetails = () => {
                         Documents required for GeM Tender Bidding
                     </h3>
                     <p className="text-gray-700 leading-7 mb-10">
-                        TendersPlus experts assist in identifying essential documents such as OEM authorization, declaration forms, PAN, GSTIN and more. Simplify compliance and streamline submission.
+                        Gameasy experts assist in identifying essential documents such as OEM authorization, declaration forms, PAN, GSTIN and more. Simplify compliance and streamline submission.
                     </p>
 
                     <h3 className="text-2xl font-bold text-indigo-600 mb-6">

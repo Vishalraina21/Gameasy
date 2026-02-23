@@ -1,76 +1,85 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Card, CardContent } from "@mui/material";
+import {
+    FileText,
+    ClipboardCheck,
+    ShieldCheck,
+    Award,
+} from "lucide-react";
 
 /* ===========================
-   SERVICES DATA
+   SERVICES DATA (From Brochure Page 4)
 =========================== */
+
 const servicesData = [
     {
-        title: "GeM Registration",
+        icon: <FileText size={28} />,
+        title: "Bidding Services",
         short: [
-            "Register as a Seller on the GeM Portal",
-            "GeM login ID & Password Creation",
-            "Profile Update and Management",
-            "Register as MSME & Start-up on the GeM Portal",
+            "End-to-end tender support",
+            "Technical & Financial bid preparation",
+            "GeM compliance management",
+            "Strategic pricing & documentation",
         ],
-        content: `GeM (Government e-Marketplace) is an innovative platform facilitating seamless eprocurement for government entities.
+        content: `Expert end-to-end tender support: identify opportunities, prepare technical and financial bids, ensure GeM compliance, and manage EMD/bid security.
 
-Sellers keen on tapping into this vast market can initiate the process by registering on the GeM Portal. This involves creating a GeM login ID and password.
-
-GeM's user-friendly interface ensures that the registration process is smooth and efficient.
-
-Moreover, GeM Portal encourages the inclusion of MSMEs and Start-ups in the procurement ecosystem.`,
+Maximized ₹200+ Cr tender wins through strategic pricing and documentation.`,
     },
     {
-        title: "GeM Products",
+        icon: <ClipboardCheck size={28} />,
+        title: "Vendor Assessment Assistance",
         short: [
-            "GeM Product List & Information update",
-            "Product Mapping to GeM categories",
-            "Service Listing as required",
-            "Stock Updation & Catalogue Management",
+            "Complete GeM OEM panel setup",
+            "Technical evaluation preparation",
+            "Mock assessments",
+            "Discrepancy resolution",
         ],
-        content: `GeM (Government e-Marketplace) is an innovative platform facilitating seamless eprocurement for government entities. The GeM Portal (Government e-Marketplace) achieves a groundbreaking GMV of 600,000+ Crores, surpassing 200,000 Crores this fiscal year with an impressive 50% CAGR, and sees MSMEs securing 49.1% of orders, highlighting its commitment to inclusivity and economic empowerment.
+        content: `Complete GeM OEM panel setup including document verification, technical evaluation preparation, mock assessments, and discrepancy resolution with authorities.
 
-Sellers keen on tapping into this vast market can initiate the process by registering on the GeM Portal. This involves creating a GeM login ID and password, the gateway to unlocking a plethora of business opportunities. The first step is the GeM registration for sellers, where individuals or businesses interested in offering products or services to government departments can establish their presence. The GeM login credentials play a pivotal role in providing access to the platform's features and functionalities.
-
-GeM's user-friendly interface ensures that the registration process is smooth and efficient. Once registered, sellers get access to update and manage their profiles. This includes providing detailed information about the products or services offered and ensuring visibility and credibility on the platform.
-
-Moreover, GeM Portal encourages the inclusion of Micro, Small, and Medium Enterprises (MSMEs) and Start-ups in the procurement ecosystem. Registering as an MSME or Start-up on the GeM Portal opens avenues for specialized benefits and considerations. This feature reflects a commitment to supporting and promoting the growth of these enterprises, Startups as well as Make in India initiative. The registration process empowers these entities to participate in government procurement, fostering economic development and innovation in our country. For detailed information, click on GeM Registration.`,
+Ensures 100% compliance for product listing.`,
     },
     {
-        title: "Tender Bidding",
+        icon: <ShieldCheck size={28} />,
+        title: "Company Compliances",
         short: [
-            "Tender Bidding on GeM Portal",
-            "Tender Checklist Preparation",
-            "Technical Documentation Support",
-            "Financial Evaluation Updates",
+            "GST / PAN / MSME Registration",
+            "EPF / ESIC Filings",
+            "GeM profile maintenance",
+            "Category authorizations",
         ],
-        content: `Listing products on the GeM (Government e-Marketplace) portal is important for businesses seeking numerous advantages. Firstly, it enhances visibility, exposing offerings to all government buyers and departments, thereby increasing the probability of attracting potential customers.
+        content: `Full compliance management covering:
 
-GeM Portal serves as the official platform for government eprocurement, providing businesses access to rewarding opportunities, including tenders, contracts, and procurement processes. GeM Product Listing ensures compliance with government guidelines and standards, instilling confidence in potential buyers. GeM Portal opens avenues for procuring direct orders under Rs.25,000, emphasizing listed products with comprehensive features, aligning with buyer requirements, and offering an additional window for business growth.
+• GST / PAN / MSME registration  
+• EPF / ESIC filings  
+• GeM profile maintenance  
+• Category authorizations  
 
-Moreover, GeM streamlines the procurement process, reducing paperwork and delays for both sellers and buyers. GeM Portal products facilitate market expansion by providing access to a diverse customer base across various government departments and agencies. Additionally, it promotes transparency in transactions, contributing to a more accountable procurement process.
-
-GeM products facilitate direct interaction between sellers and government buyers, enabling businesses to understand needs and tailor offerings. This strategic move enhances market reach and participation in transparent and efficient procurement processes. Elevate your business by listing on the GeM portal for government engagement and expanded opportunities. For detailed information, click on GeM Product Listing.`,
+Ensuring smooth and compliant business operations.`,
     },
     {
-        title: "Other Services",
+        icon: <Award size={28} />,
+        title: "All Types of Certifications",
         short: [
-            "MSME Registration / Udyam Certificate",
-            "GeM Vendor Assessment",
-            "IREPS, CPPP Registration",
-            "OEM & Reseller Panel Activation",
+            "NABL Certification",
+            "ISO 9001 / 14001 / 27001",
+            "BIS Certification",
+            "Third-party audits & maintenance",
         ],
-        content: `GeM Vendor Assessment:- validates seller quality, follows registration, and ensures compliance. Different categories like OEMs, Brand Owners, and Deemed OEMs undergo specific assessment stages. QCI India facilitates online assessment in 2 stages – Desktop Assessment and Video Assessment and covers legal, product, order history, compliance, process, efficiency, quality assurance, logistics, supplier management, customer service, safety standards, warranty, R&D, intellectual property aspects and more. Key points include payment, 15-day completion, and a three-year validity. Exemptions are granted based on turnover, PSU status, small-scale sellers, specialized products, government representation, specific organizations, and more. Understanding the Gem Vendor Assessment process is crucial for sellers participating in government tenders through the GeM portal. For detailed information, click GeM Vendor Assessment.
+        content: `NABL, ISO 9001 / 14001 / 27001, BIS certification support including:
 
-MSME Registration:- Micro, Small, and Medium Enterprises (MSMEs) are vital for India's economic growth, fostering innovation and inclusivity. Government recognition, determined by turnover and investment, is essential for accessing incentives and support. The Udyam MSME Registration portal, catering to new and existing entrepreneurs, streamlines the process with a user-friendly platform. The Ministry of MSME issues the MSME Registration Certificate, unlocking benefits like financial support, market access, and tender exemptions. This fosters an environment conducive to MSME growth, providing global access, capacity-building, research support, and technology initiatives. Robust government measures highlight a commitment to formalization, expansion, and inclusive economic development through MSME registration in India. For detailed information, click MSME Registration.`,
+• Gap analysis  
+• Documentation  
+• Third-party audits  
+• Maintenance  
+
+Ensuring your business meets the highest quality standards.`,
     },
 ];
 
 /* ===========================
    COMPONENT
 =========================== */
+
 const Services = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const contentRef = useRef(null);
@@ -89,65 +98,70 @@ const Services = () => {
     }, [activeIndex]);
 
     return (
-        <section className="w-full bg-gray-100 py-20 px-4 md:px-10">
+        <section className="w-full bg-gradient-to-b from-gray-50 to-white py-20 px-4 md:px-10">
 
-            {/* Title */}
+            {/* Section Title */}
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-                    <span className="text-indigo-600 font-bold">Gemeasy</span> Services
-                </h2>
+                <motion.h2
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="text-3xl md:text-4xl font-bold text-gray-900"
+                >
+                    Our <span className="text-indigo-600">Services</span>
+                </motion.h2>
             </div>
 
-            {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+            {/* Service Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                 {servicesData.map((service, index) => (
                     <motion.div
                         key={index}
-                        whileHover={{ y: -10, scale: 1.03 }}
-                        transition={{ type: "spring", stiffness: 260, damping: 18 }}
+                        whileHover={{ y: -8 }}
+                        transition={{ type: "spring", stiffness: 200 }}
                         className="cursor-pointer"
                         onClick={() => handleClick(index)}
                     >
-                        <Card
-                            elevation={0}
-                            className={`!rounded-2xl !border transition-all duration-500 h-full
-                ${activeIndex === index
-                                    ? "!bg-indigo-600 !border-indigo-600 shadow-xl"
-                                    : "bg-white !border-indigo-200 hover:!border-indigo-400 hover:shadow-lg"
+                        <div
+                            className={`rounded-2xl border p-8 transition-all duration-400 h-full shadow-sm
+              ${activeIndex === index
+                                    ? "bg-indigo-600 border-indigo-600 shadow-xl"
+                                    : "bg-white border-gray-200 hover:border-indigo-400 hover:shadow-lg"
                                 }`}
                         >
-                            <CardContent className="p-7">
-                                <h3
-                                    className={`text-lg font-semibold mb-5 transition-colors duration-300
-                    ${activeIndex === index
-                                            ? "text-white"
-                                            : "text-indigo-600"
-                                        }`}
-                                >
-                                    {service.title}
-                                </h3>
+                            <div
+                                className={`mb-6 ${activeIndex === index ? "text-white" : "text-indigo-600"
+                                    }`}
+                            >
+                                {service.icon}
+                            </div>
 
-                                <ul className="space-y-2 text-sm leading-6">
-                                    {service.short.map((item, idx) => (
-                                        <li
-                                            key={idx}
-                                            className={`transition-colors duration-300
-                        ${activeIndex === index
-                                                    ? "text-white/90"
-                                                    : "text-gray-600"
-                                                }`}
-                                        >
-                                            • {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </CardContent>
-                        </Card>
+                            <h3
+                                className={`text-lg font-semibold mb-5 ${activeIndex === index ? "text-white" : "text-gray-800"
+                                    }`}
+                            >
+                                {service.title}
+                            </h3>
+
+                            <ul className="space-y-2 text-sm">
+                                {service.short.map((item, idx) => (
+                                    <li
+                                        key={idx}
+                                        className={`${activeIndex === index
+                                                ? "text-white/90"
+                                                : "text-gray-600"
+                                            }`}
+                                    >
+                                        • {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </motion.div>
                 ))}
             </div>
 
-            {/* Detailed Content */}
+            {/* Expanded Content */}
             <AnimatePresence>
                 {activeIndex !== null && (
                     <motion.div
@@ -157,18 +171,14 @@ const Services = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -40 }}
                         transition={{ duration: 0.4 }}
-                        className="max-w-7xl mx-auto mt-20 bg-white p-4"
+                        className="max-w-5xl mx-auto mt-16 bg-white rounded-2xl shadow-lg p-10"
                     >
-                        <h3 className="text-3xl font-bold text-indigo-600 mb-8">
+                        <h3 className="text-2xl font-bold text-indigo-600 mb-6">
                             {servicesData[activeIndex].title}
                         </h3>
 
-                        <div className="text-gray-700 leading-8 text-[16px] space-y-6">
-                            {servicesData[activeIndex].content
-                                .split("\n\n")
-                                .map((para, i) => (
-                                    <p key={i}>{para}</p>
-                                ))}
+                        <div className="text-gray-700 leading-8 text-[16px] whitespace-pre-line">
+                            {servicesData[activeIndex].content}
                         </div>
                     </motion.div>
                 )}
